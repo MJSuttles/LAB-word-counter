@@ -9,7 +9,7 @@ const wordCounter = (value) => {
     wordCount.innerHTML = `Word Count: 0`; 
   } else {
     // if the value is empty, set the error message value to "Please input text"
-    error.innerHTML = ""; // UPDATE THIS
+    error.innerHTML = "Please input text"; // UPDATE THIS
   }
 }
 
@@ -40,7 +40,6 @@ form.addEventListener("submit", (event) => {
 
 form.addEventListener("reset", () => {
   error.innerHTML = ""; // on reset, clear the innderHTML
-  wordCount.innerHTML = ""; // on reset, clear the innderHTML
 });
 
 toggleButton.addEventListener("click", (event) => {
